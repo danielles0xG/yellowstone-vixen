@@ -140,6 +140,7 @@ mod tests {
     #[tokio::test]
     async fn test_mint_account_parsing() {
         let parser = TokenProgramAccParser;
+        println!("parser0000: {:?}", parser);
 
         let account = account_fixture!("3SmPYPvZfEmroktLiJsgaNENuPEud3Z52zSfLQ1zJdkK", &parser);
 

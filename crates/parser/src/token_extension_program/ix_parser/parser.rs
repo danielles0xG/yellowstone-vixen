@@ -289,7 +289,7 @@ mod tests {
         else {
             panic!("Invalid Instruction");
         };
-
+        println!("{:?}", data);
         assert_eq!(data.decimals, 9);
         assert_eq!(data.amount, 100.mul(10u64.pow(data.decimals.into())));
     }

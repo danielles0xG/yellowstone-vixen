@@ -13,6 +13,11 @@ toml = "0.8.12"
 tracing = "0.1.40"
 tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
 yellowstone-vixen = { workspace = true, features = ["stream"] }
+yellowstone-vixen-parser = { workspace = true, features = [
+  "proto",
+  "token-extensions",
+  "token-program",
+] }
 
 [build-dependencies]
 prost-build = "0.13.1"

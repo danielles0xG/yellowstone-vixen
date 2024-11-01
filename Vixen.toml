@@ -1,0 +1,7 @@
+[yellowstone]
+# endpoint of the dragonmouth stream
+endpoint = "https://moonvera-ams.rpcpool.com/6eb499c8-2570-43ab-bad8-fdf1c63b2b41"
+# x-token of the dragonmouth stream
+x-token = "6eb499c8-2570-43ab-bad8-fdf1c63b2b41"
+# dragonmouth connect timeout in seconds
+timeout = 60

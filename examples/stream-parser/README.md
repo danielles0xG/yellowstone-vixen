@@ -18,8 +18,12 @@ RUST_LOG=info cargo run -- --config "$(pwd)/../../Vixen.toml"
 To subcribe to the stream, navigate to [`crates/proto/proto`](/crates/proto/proto/) and run
 
 ```bash
-grpcurl -plaintext -import-path ./ -proto stream.proto -proto parser.proto -proto solana.proto -d '{"program": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"}' 127.0.0.1:3030 vixen.stream.ProgramStreams/Subscribe
+grpcurl -plaintext -import-path ./ -proto stream.proto -proto parser.proto -proto solana-token/accounts.proto -d '{"program": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"}' 127.0.0.1:3030 vixen.stream.ProgramStreams/Subscribe
 ```
 
 This example is using Token extensions program to parse Account updates (ixs coming soon).
 replace TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA in request data to parse Token Program
+
+```bash
+grpcurl -plaintext -import-path ./ -proto stream.proto -proto parser.proto -proto solana-token/accounts.proto -d '{"program": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"}' 127.0.0.1:3030 vixen.stream.ProgramStreams/Subscribe
+```

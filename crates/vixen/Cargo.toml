@@ -1,0 +1,7 @@
+[package]
+name = "vixen"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+yellowstone-vixen-core = { workspace = true }
