@@ -5910,7 +5910,13 @@ checksum = "49874b5167b65d7193b8aba1567f5c7d93d001cafc34600cee003eda787e483f"
 name = "vixen"
 version = "0.1.0"
 dependencies = [
+ "clap 4.5.13",
+ "spl-pod",
+ "toml 0.8.19",
+ "tracing-subscriber",
+ "yellowstone-vixen",
  "yellowstone-vixen-core",
+ "yellowstone-vixen-parser",
 ]
 
 [[package]]

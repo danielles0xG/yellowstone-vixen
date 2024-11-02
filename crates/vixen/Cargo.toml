@@ -4,4 +4,10 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+yellowstone-vixen = { workspace = true }
 yellowstone-vixen-core = { workspace = true }
+spl-pod = { version = "0.3.0" }
+yellowstone-vixen-parser = { workspace = true }
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
+clap = { version = "4.5.4", features = ["derive", "cargo", "wrap_help"] }
+toml = "0.8.12"
